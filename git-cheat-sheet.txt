@@ -1,0 +1,14 @@
+
+Navigation sur l'Ordinateur 
+---------------------------------
+pwd => afficher le repertoire courant
+cd => renvoie a la racine de l'utilisateur
+cd <adrsesse> => renvoie a l'adresse en question
+ls => liste brute des element du dossier courant
+	- "-la" : liste détaillée
+	- "-lah" : liste détaillée avec les unités sur la taille des elements
+
+
+Git Commandes Cheat-Sheet
+---------------------------------
+git clone => recuperation du repository

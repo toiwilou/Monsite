@@ -1,0 +1,178 @@
+.header a,
+.titre_parcours,
+.titre_domaine,
+.paragraphe_domaine {
+	color: white;
+}
+
+.header,
+.section_haute,
+.section_basse,
+.main_profil,
+.main_contact,
+.footer {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+
+/* Header */
+
+
+.header {
+	background-color: #6d09ff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.logo,
+.menu {
+	display: inline-block;
+}
+
+.menu {
+	float: right;
+}
+
+
+/* Accueil */
+
+
+.section_haute {
+	background-color: #6d09ff;
+	padding-top: 100px;
+}
+
+.image_index,
+.texte_parcours {
+	display: inline-block;
+	vertical-align: top
+}
+
+.esp_parcours a {
+	display: block;
+	color: #71d5d9;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-decoration: underline;
+}
+
+.icon_informatique {
+	display: inline-block;
+	margin-right: 40px
+}
+
+.section_basse {
+	margin: 20px;
+}
+
+.block_menu {
+	text-align: center;
+	margin: 100px 5%;
+}
+
+.div_block {
+	display: inline-block;
+	margin-right: 10%;
+}
+
+.icon,
+.legend {
+	display: inline-block;
+}
+
+.projet_index {
+	border-style: solid;
+	background-color: #89faef;
+}
+
+
+
+/* Profil */
+
+
+.main_profil {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.main_profil section {
+	display: inline-block;
+	margin-right: 8%
+}
+
+
+/* Portfolio */
+
+
+
+
+
+/* Contact */
+
+
+.main_contact {
+	background-color: #a9cfc5;
+
+}
+
+.localisation,
+.maps {
+	text-align: center;
+}
+
+
+/* Footer */
+
+
+.footer {
+	background-color: #000031;
+}
+
+.nav_footer {
+	padding-top: 25px
+}
+
+.menu_profil,
+.menu_portfolio,
+.div_contact {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.div_contact {
+	float: right;
+}
+
+.menu_profil > li > a,
+.menu_portfolio > li > a,
+.contact_footer a {
+	color: white;
+}
+
+.contact_footer {
+	padding-bottom: 20px;
+}
+
+.sous_titre a {
+	color: #789494;
+}
+
+footer .icon,
+footer figcaption {
+	display: inline-block;
+}
+
+.div_contact > .div_icon a {
+	color: #f0ec71;
+}
+
+
+.footer a:hover,
+.header a:hover {
+	text-decoration: none;	
+	color: #dbd99a;
+}
+
+
