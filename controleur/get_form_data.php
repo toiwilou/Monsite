@@ -1,5 +1,7 @@
 <?php
 
+require '../model/connexion.php';
+
 /**
  * Liste des variable du formulaire 
  */ 
@@ -11,16 +13,11 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Ouverture de la connexion à la base
-try{
-    $bdd = new PDO('mysql:host=localhost;dbname=site_personnel;charset=utf8', 'toiwilou', 'toiwilou12');
-} catch (Exception $ex) {
-    die($ex->getMessage());
-}
 
 
 // Insertion
 //$bdd->('INSERT INTO jeux_video(nom, possesseur, console, prix, nbre_joueurs_max, commentaires) VALUES(:nom, :possesseur, :console, :prix, :nbre_joueurs_max, :commentaires)');
-$req = $bdd->prepare("INSERT INTO contact (nom, prenom, adresse, telephone, email, message, created_at, update_ut) VALUES (:nom, :prenom, :adresse, :telephone, :email, :message, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)");
+$req = mysqlCconnexion()->prepare("INSERT INTO contact (nom, prenom, adresse, telephone, email, message, created_at, update_ut) VALUES (:nom, :prenom, :adresse, :telephone, :email, :message, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)");
 $req->execute([
     'nom' => $nom,
     'prenom' => $prenom,
@@ -31,7 +28,7 @@ $req->execute([
 ]);
 
 // recuperation des donnees 
-$reponse = $bdd->query('select * from site_personnel.contact');
+$reponse = mysqlCconnexion()->query('select * from site_personnel.contact');
 
 
 //affichage des donnees 

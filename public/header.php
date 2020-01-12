@@ -28,6 +28,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">Contact</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard/admin.php">Admin</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
