@@ -6,51 +6,59 @@
             <h1 class="titre_parcours">Mon parcours</h1>
             <h2 class="titre_domaine">Domaine informatique</h2>
             <p class="paragraphe_domaine">
-                Lorem ipsum dolor sit amet, consectetur adipisicing <br>
-                elit, sed do eiusmodtempor incididunt ut labore et <br>
-                dolore magna aliqua. Ut enim ad minim veniam,quis <br>
-                nostrud exercitation ullamco laboris nisi ut aliquip
+                C'est après avoir eu une licence de mathématiques en 2019<br>
+                que j'ai décidé de me lancer dans le domaine informatique.<br>
+                Je n'était pas complétement perdu sur ce qui est de  <br>
+                l'informatique.
             </p>
-            <div class="esp_parcours"><a href="#">En savoir plus</a></div>
-            <div class="icon_informatique"><a href="#"><img src="img/ai.png"></a></div>
-            <div class="icon_informatique"><a href="#"><img src="img/maths.png"></a></div>
-            <div class="icon_informatique"><a href="#"><img src="img/physic.png"></a></div>
+            <div class="esp_parcours"><a href="profil.php#parcour">En savoir plus</a></div>
+            <div class="icon_informatique"><a href="profil.php#parcour"><img src="img/ai.png"></a></div>
+            <div class="icon_informatique"><a href="profil.php#parcour"><img src="img/maths.png"></a></div>
+            <div class="icon_informatique"><a href="profil.php#parcour"><img src="img/physic.png"></a></div>
         </div>
     </section>
     <section class="section_basse">
         <div class="block_menu">
-            <a href="profil.php">
-                <div class="div_block">
-                    <img class="icon" src="img/user.png">
-                    <figcaption class="legend">PROFIL</figcaption>
-                </div>
-            </a>
-            <a href="portfolio.php">
-                <div class="div_block">
-                    <img class="icon" src="img/file.png">
-                    <figcaption class="legend">PORTFOLIO</figcaption>
-                </div>
-            </a>
-            <a href="contact.php">
-                <div class="div_block">
-                    <img class="icon" src="img/message">
-                    <figcaption class="legend">CONTACT</figcaption>
-                </div>
-            </a>
+            <button class="bouton">
+                <a href="profil.php">
+                    <div class="div_block">
+                        <img class="icon" src="img/profil.png">
+                        <figcaption class="legend">PROFIL</figcaption>
+                    </div>
+                </a>
+            </button>
+            <button class="bouton">
+                <a href="portfolio.php">
+                    <div class="div_block" id="porfolio_block">
+                        <img class="icon" src="img/portfo.png">
+                        <figcaption class="legend">PORTFOLIO</figcaption>
+                    </div>
+                </a>
+            </button>
+            <button class="bouton">
+                <a href="contact.php">
+                    <div class="div_block">
+                        <img class="icon" src="img/contact.png">
+                        <figcaption class="legend">CONTACT</figcaption>
+                    </div>
+                </a>
+            </button>
         </div>
-        <div class="projet_index">
-            <h1 class="titre_projet">Projets Professionnels</h1>
-            <p class="paragraphe_projet">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div class="esp_projet"><a href="#">En savoir plus</a></div>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4"><b>Projets</b></h1>
+                <p>
+                    On observe dans le monde d'aujourd'hui une evolution exponentielle 
+                    dans le domaine des numéruques. On peut bien constater que dans les 
+                    années suivantes, tout sera informatisé. Pour cela j'ai décidé 
+                    d'intégrer le domaine informatique afin de devenir entrepreneur, plus
+                    précisement sur des projets informatisé.
+                </p>
+                <div class="esp_projets"><a href="profil.php#projetpro">En savoir plus</a></div>
+            </div>
         </div>
-    </section>
+        
+    </section>  
 </main>
 
 <?php require'footer.php'; ?>

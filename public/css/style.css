@@ -2,17 +2,25 @@
 .titre_parcours,
 .titre_domaine,
 .paragraphe_domaine {
-	color: white;
+    color: white;
 }
 
 .header,
 .section_haute,
-.section_basse,
-.main_profil,
 .main_contact,
+.section_basse,
 .footer {
-	padding-left: 20%;
-	padding-right: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 
@@ -20,18 +28,18 @@
 
 
 .header {
-	background-color: #6d09ff;
-	padding-top: 20px;
-	padding-bottom: 20px;
+    background-color: #6d09ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo,
 .menu {
-	display: inline-block;
+    display: inline-block;
 }
 
 .menu {
-	float: right;
+    float: right;
 }
 
 
@@ -39,51 +47,63 @@
 
 
 .section_haute {
-	background-color: #6d09ff;
-	padding-top: 100px;
+    background-color: #6d09ff;
+    padding-top: 100px;
 }
 
 .image_index,
 .texte_parcours {
-	display: inline-block;
-	vertical-align: top
+    display: inline-block;
+    vertical-align: top
 }
 
 .esp_parcours a {
-	display: block;
-	color: #71d5d9;
-	padding-top: 20px;
-	padding-bottom: 50px;
-	text-decoration: underline;
+    display: block;
+    color: #71d5d9;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-decoration: underline;
 }
 
 .icon_informatique {
-	display: inline-block;
-	margin-right: 40px
+    display: inline-block;
+    margin-right: 40px
 }
 
 .section_basse {
-	margin: 20px;
+
+
 }
 
 .block_menu {
-	text-align: center;
-	margin: 100px 5%;
+    text-align: center;
+    margin: 60px 0;
 }
 
 .div_block {
-	display: inline-block;
-	margin-right: 10%;
+    display: inline-block;
+
+}
+
+#portfolio_block {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .icon,
 .legend {
-	display: inline-block;
+    display: inline-block;
+    color: #6d09ff;
 }
 
-.projet_index {
-	border-style: solid;
-	background-color: #89faef;
+.bouton {
+    border-radius: 20px;
+    background-color: #c2d3ed;
+    height: 80px;
+}
+
+.esp_projets {
+    text-decoration: underline;
 }
 
 
@@ -91,35 +111,161 @@
 /* Profil */
 
 
+.cherv {
+    font-family: serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.texte, .image {
+    display: inline-block;
+}
+
+.texte {
+    width: 300px;
+}
+
+.image {
+    margin-left: 80px;
+    vertical-align: top;
+}
+
 .main_profil {
-	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 100px;
+    padding: 100px 20%;
+    background-color: #6d09ff;
 }
 
 .main_profil section {
-	display: inline-block;
-	margin-right: 8%
+    display: inline-block;
+    margin-right: 8%
+}
+
+.container {
+    text-align: left;
+}
+
+.menu_profil > li, .menu_portfolio > li {
+    padding-left: 0;
+}
+
+.menu_profil > div li, .menu_portfolio > div li {
+    padding: 0;
+}
+
+.spoiler-content {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.spoiler-content.visible {
+    display: inline;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.span {
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 
 /* Portfolio */
 
 
+.main_portfolio {
+    padding: 100px 20%;
+    background-color: #6d09ff;
+}
 
+ul.tabs, .tabs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs li {
+    float: left;
+    display: block;
+}
+
+.tabs:after {
+    display: table;
+    content: ' ';
+    clear: both;
+}
+
+.tabs a {
+    display: inline-block;
+    background-color: #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 10px 15px; 
+}
+
+.tabs .active a {
+    background-color: #fff;
+}
+
+.tabs-content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+    background-color:  #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.fade.in{
+    opacity: 1;
+}
+
+.titre_algo {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 
 /* Contact */
 
 
 .main_contact {
-	background-color: #a9cfc5;
+    background-color: #6d09ff; 
+}
 
+.form-control {
+    width: 60%;
 }
 
 .localisation,
 .maps {
-	text-align: center;
+    text-align: center;
+}
+
+.formulaire label, .localisation {
+    color: white;
+}
+
+.radio {
+    display: inline-block;
+    color: white;
+    margin: 10px 6%;
 }
 
 
@@ -127,52 +273,59 @@
 
 
 .footer {
-	background-color: #000031;
+    background-color: #000031;
 }
 
 .nav_footer {
-	padding-top: 25px
+    padding-top: 25px
 }
 
+.toiwilogo,
 .menu_profil,
 .menu_portfolio,
 .div_contact {
-	display: inline-block;
-	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-link {
+    padding-top: 0;
 }
 
 .div_contact {
-	float: right;
+    float: right;
 }
 
 .menu_profil > li > a,
 .menu_portfolio > li > a,
 .contact_footer a {
-	color: white;
+    color: white;
 }
 
 .contact_footer {
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .sous_titre a {
-	color: #789494;
+    color: #789494;
 }
 
 footer .icon,
 footer figcaption {
-	display: inline-block;
+    display: inline-block;
 }
 
-.div_contact > .div_icon a {
-	color: #f0ec71;
+.div_contact span {
+    color: #4287f5;
 }
 
 
 .footer a:hover,
 .header a:hover {
-	text-decoration: none;	
-	color: #dbd99a;
+    text-decoration: none;	
+    color: #dbd99a;
 }
+
+
 
 
